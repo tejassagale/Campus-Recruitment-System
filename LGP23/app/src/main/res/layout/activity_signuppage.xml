@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:verticalScrollbarPosition="defaultPosition"
+    android:layout_height="match_parent"
+    tools:context=".SignuppageActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="880dp"
+            android:focusable="false"
+            android:focusableInTouchMode="true">
+
+
+    <TextView
+        android:id="@+id/tvMasterdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="95dp"
+        android:text="Masterdata"
+        android:textColor="@color/DarkCyan"
+        android:textSize="30dp" />
+
+
+             <EditText
+                android:id="@+id/etStudName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Name"
+                 android:layout_below="@+id/tvMasterdata"
+                android:inputType="textCapWords" />
+                <EditText
+                    android:id="@+id/etUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Username"
+                    android:layout_below="@+id/etStudName"
+                    android:inputType="textEmailAddress" />
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:layout_below="@+id/etUsername"
+                    android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/etErpid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etPassword"
+                android:ems="10"
+                android:hint="ERP ID"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/etStudAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etErpid"
+                android:ems="10"
+                android:hint="Age"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/etStudAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etStudAge"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="textPostalAddress" />
+
+
+            <EditText
+                android:id="@+id/etStudGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etStudAddress"
+                android:ems="10"
+                android:hint="Gender"
+                android:inputType="textCapWords" />
+            <EditText
+                android:id="@+id/etStudBranch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etStudGender"
+                android:ems="10"
+                android:hint="Branch"
+                android:inputType="textCapWords" />
+
+            <EditText
+                android:id="@+id/etStudCgpa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etStudBranch"
+                android:ems="10"
+                android:hint="Cgpa"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/etStudContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etStudCgpa"
+                android:ems="10"
+                android:hint="contact"
+                android:inputType="numberDecimal"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/etStudYOP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etStudContact"
+                android:ems="10"
+                android:hint="Year of Passing"
+                android:inputType="numberDecimal"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/etStudQualify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etStudYOP"
+                android:ems="10"
+                android:hint="Qualification"
+                android:inputType="textCapWords"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <EditText
+                android:id="@+id/etStudSkills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etStudQualify"
+                android:ems="10"
+                android:hint="Skills known"
+                android:inputType="text"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <EditText
+                android:id="@+id/etStud10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etStudSkills"
+                android:ems="10"
+                android:hint="SSC %"
+                android:inputType="numberDecimal"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/etStud12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etStud10"
+                android:ems="10"
+                android:hint="HSC/Diploma %"
+                android:inputType="numberDecimal"
+                tools:ignore="Autofill" />
+            <EditText
+                android:id="@+id/etNoofkt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etStud12"
+                android:ems="10"
+                android:hint="No. of live KT's"
+                android:inputType="numberDecimal"
+                tools:ignore="Autofill" />
+
+
+            <Button
+                android:id="@+id/btnSignupStudent"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/etNoofkt"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="55dp"
+                android:background="@drawable/roundedbutton"
+                android:backgroundTint="@color/DarkCyan"
+                android:paddingLeft="80dp"
+                android:paddingRight="80dp"
+
+                android:text="SignUp"
+                android:textColor="#ffff"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+</ScrollView>

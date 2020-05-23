@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Report">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="20dp"
+        android:id="@+id/cardview"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Placemenent Details"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:paddingTop="10dp"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tverpid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Student ERP ID  : "
+                android:paddingLeft="20dp"
+                android:layout_below="@id/tvDetails"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/eterpid"
+                android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tverpid"
+                android:layout_below="@id/tvDetails"
+                android:background="#fff"
+                android:layout_marginTop="20dp"
+                android:inputType="numberDecimal"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tvcompanyname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="CompanyName : "
+                android:paddingLeft="20dp"
+                android:layout_below="@id/eterpid"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/etcompanyname"
+                android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/eterpid"
+                android:layout_below="@id/eterpid"
+                android:background="#fff"
+                android:layout_marginTop="20dp"
+                android:inputType="textCapWords"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/btnsubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Submit"
+                android:background="@drawable/roundcardbutton"
+                android:fontFamily="serif"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_below="@id/etcompanyname" />
+
+
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/pg"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="350dp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Button
+        android:id="@+id/btnViewreport"
+        android:layout_below="@+id/cardview"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:text="View Report"
+        android:fontFamily="serif"
+        android:textFontWeight="200"
+
+        android:background="@drawable/roundedbutton"
+        android:textSize="25sp"
+        android:textColor="#ffff" />
+    <Button
+        android:id="@+id/btnCompanyReport"
+        android:layout_below="@+id/btnViewreport"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Company wise report"
+        android:layout_alignStart="@id/btnViewreport"
+        android:layout_toEndOf="@id/btnViewreport"
+        android:fontFamily="serif"
+        android:paddingLeft="30dp"
+        android:paddingRight="35dp"
+        android:textFontWeight="200"
+
+        android:background="@drawable/roundedbutton"
+        android:textSize="20sp"
+        android:textColor="#ffff" />
+
+
+</RelativeLayout>

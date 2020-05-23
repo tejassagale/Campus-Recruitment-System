@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:id="@+id/relative"
+    >
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:id="@+id/aboutus"
+        android:text="ABOUT US"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#123"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <View
+        android:layout_width="170dp"
+        android:layout_height="6dp"
+        android:id="@+id/view"
+        android:layout_below="@+id/aboutus"
+        android:background="@color/logo"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:id="@+id/body"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="20dp"
+        android:text="Our Android application mainly aims at providing placements to college student's with a great ease.We have designed the app in such a way that the student's,TPO and Companies won't have any confusion within the placement process.We have brought a concept of Masterdata wherein the students have to register only once for all the companies.This data will be stored with the TPO of the college and whenever the company drive will be there,he will provide it to them.Further the company will send the list of selected students to TPO and he will forward it to student's in the form of notification's.The TPO creates an event of each single company with all the details of the company included and provides it to the student.After the final selection,the TPO generates the report with each company listed in it."
+        android:textColor="#123"
+        android:textSize="15dp"
+        android:textStyle="bold"
+
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>

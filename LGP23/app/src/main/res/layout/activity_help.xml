@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Help">
+
+    <TextView
+        android:id="@+id/help1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HELP DESK"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        android:textColor="@color/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+
+    <TextView
+        android:id="@+id/ques"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Any Queries for TPO ??"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#123"
+        android:textStyle="bold"
+        android:layout_marginTop="150dp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/etques"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+
+        android:layout_below="@+id/ques"
+android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/cell_shape"
+
+        android:hint="Enter your query here"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:text="Submit"
+        android:textColor="#ffff"
+        android:textSize="25sp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/roundedbutton"
+        android:layout_below="@+id/etques"
+        android:layout_marginTop="100dp"
+
+        android:textAlignment="center"
+        />
+
+</RelativeLayout>

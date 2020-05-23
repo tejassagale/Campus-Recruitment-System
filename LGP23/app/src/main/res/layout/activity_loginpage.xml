@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:verticalScrollbarPosition="defaultPosition"
+    android:layout_height="match_parent"
+    >
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:focusable="false"
+       android:focusableInTouchMode="true">
+       <ProgressBar
+           android:id="@+id/pg"
+           style="?android:attr/progressBarStyle"
+           android:layout_centerInParent="true"
+           android:layout_centerHorizontal="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+       <TextView
+        android:id="@+id/tvLogo"
+        android:layout_width="wrap_content"
+        android:textColor="@color/logo"
+        android:layout_marginTop="40dp"
+       android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:layout_gravity="center"
+        android:textFontWeight="200"
+        android:fontFamily="serif"
+        android:layout_height="wrap_content"
+        android:text="LetsGetPlaced"
+        tools:ignore="UnusedAttribute" />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:textFontWeight="100"
+        android:fontFamily="serif"
+        android:layout_below="@+id/tvLogo"
+        android:layout_height="wrap_content"
+        android:text="USERNAME"
+        android:textColor="@color/logo"/>
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="325dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/tvUsername"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="@color/DarkCyan"
+        android:drawableLeft="@mipmap/usernameicon" />
+
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:textFontWeight="100"
+        android:fontFamily="serif"
+        android:layout_below="@+id/etUsername"
+        android:layout_height="wrap_content"
+        android:text="PASSWORD"
+        android:textColor="@color/DarkCyan"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="325dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPassword"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:backgroundTint="@color/DarkCyan"
+        android:drawableLeft="@mipmap/passwordicon"
+        tools:ignore="Autofill,LabelFor" />
+
+    <Button
+        android:id="@+id/btnLoginStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:paddingRight="80dp"
+        android:paddingLeft="80dp"
+        android:textFontWeight="100"
+        android:fontFamily="serif"
+        android:backgroundTint="@color/DarkCyan"
+        android:background="@drawable/roundedbutton"/>
+
+    <Button
+        android:id="@+id/btnForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FORGOT PASSWORD?"
+        android:layout_below="@+id/btnLoginStudent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#ffff"
+        android:textFontWeight="100"
+        android:fontFamily="serif"
+        android:textColor="@color/DarkCyan"
+        android:textSize="18sp"/>
+
+
+      <Button
+        android:id="@+id/btnNewAccount"
+        android:layout_width="wrap_content"
+        android:text="NO ACCOUNT? SIGNUP"
+          android:layout_below="@+id/btnForgotPassword"
+
+          android:layout_marginTop="5dp"
+          android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffff"
+        android:textFontWeight="100"
+        android:fontFamily="serif"
+        android:textColor="@color/DarkCyan"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btnAdminLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/btnNewAccount"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#ffff"
+        android:textFontWeight="100"
+        android:fontFamily="serif"
+        android:textColor="@color/DarkCyan"
+        android:textSize="18sp"
+        android:text="ADMIN LOGIN?"
+        android:layout_marginBottom="20dp"/>
+
+   </RelativeLayout>
+
+</ScrollView>

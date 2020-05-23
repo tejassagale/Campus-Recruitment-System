@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rules"
+        android:text="RULES AND REGULATIONS"
+        android:textSize="25sp"
+        android:textColor="@color/logo"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="45dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        android:id="@+id/regulation"
+        android:layout_below="@+id/rules"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:text="The Objective of our system is to provide placement for each and every individual irrespective of the eligibility criteria.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+• It is mandatory for every student to register through our android application for the masterdata. If anyone fails to do that, he/she would not be considered for the placement process.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+• The TPO login is unique, no other person can access his/her id .The type of security needed for such privacy is provided by our application.
+
+
+
+• TPO adds all the newly coming companies by creating an event for each one. All the details of the company are provided to each candidate through the application. Each candidate must be aware of the companies being added in the process.
+
+
+
+• Candidate once selected for any company would be out of the placement program.
+
+• Candidates will be sorted according to the College and Company’s Recruitment Criteria. All candidates are eligible to apply for the placement drive irrespective of the criteria’s mentioned.
+
+• If Candidate gets selected for any company, he/she has to further decide whether to accept or reject the offer.
+
+• TPO closes the event for each company after students have responded for placement process with great initiative.
+
+• TPO generates final report of how many students are placed in all. If any one have plans for higher studies, then he/she should not voluntarily register for the placement process.
+
+• According to the policy, a student will be allowed for maximum of five attempts for the selection process."
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

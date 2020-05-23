@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/cevent"
+            android:icon="@drawable/event"
+            android:title="Create Event" />
+        <item
+            android:id="@+id/vcompany"
+            android:icon="@drawable/enterprise"
+            android:title="View Company" />
+        <item
+            android:id="@+id/vmaster"
+            android:icon="@drawable/list"
+            android:title="Access Masterdata" />
+        <item
+            android:id="@+id/snotify"
+            android:icon="@drawable/notification"
+            android:title="Send Notifications" />
+
+        <item
+            android:id="@+id/mreport"
+            android:icon="@drawable/vreport"
+            android:title="Make Report" />
+
+        <item
+            android:id="@+id/devent"
+            android:icon="@drawable/trash"
+            android:title="Delete Event" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/legacy"
+                android:icon="@drawable/document"
+                android:title="Legacy" />
+            <item
+                android:id="@+id/lgp"
+                android:icon="@drawable/aboutus"
+                android:title="About LetsGetPlaced" />
+
+            <item
+                android:id="@+id/help"
+                android:icon="@drawable/help"
+                android:title="Help" />
+        </menu>
+    </item>
+
+</menu>

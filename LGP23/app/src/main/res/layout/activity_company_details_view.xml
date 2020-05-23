@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CompanyDetailsView">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/tvcompanyname"
+        android:layout_width="wrap_content"
+        android:textColor="@color/logo"
+        android:layout_marginTop="40dp"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:textFontWeight="200"
+        android:fontFamily="serif"
+        android:layout_height="wrap_content"
+        android:text="Company"
+        tools:ignore="UnusedAttribute"  />
+    <TextView
+        android:id="@+id/tvJobDescription1"
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="20dp"
+        android:textSize="20sp"
+        android:layout_below="@id/tvcompanyname"
+        android:layout_gravity="left"
+        android:textFontWeight="200"
+        android:fontFamily="serif"
+        android:layout_height="wrap_content"
+        android:text="Job Desccription : "
+        tools:ignore="UnusedAttribute"  />
+    <TextView
+        android:id="@+id/tvJobDescription2"
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:layout_below="@id/tvcompanyname"
+        android:layout_toEndOf="@id/tvJobDescription1"
+        android:layout_toRightOf="@id/tvJobDescription1"
+        android:textFontWeight="200"
+        android:fontFamily="serif"
+        android:maxLines="3"
+        android:layout_height="wrap_content"
+
+        tools:ignore="UnusedAttribute"  />
+
+    <TextView
+        android:id="@+id/tvJobLocation1"
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:textSize="20sp"
+        android:layout_below="@id/tvJobDescription2"
+        android:layout_gravity="left"
+        android:textFontWeight="200"
+        android:fontFamily="serif"
+        android:layout_height="wrap_content"
+        android:text="Job Location : "
+        tools:ignore="UnusedAttribute"  />
+    <TextView
+        android:id="@+id/tvJobLocation2"
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_below="@id/tvJobDescription2"
+        android:layout_toEndOf="@id/tvJobLocation1"
+        android:layout_toRightOf="@id/tvJobLocation1"
+        android:textFontWeight="200"
+        android:fontFamily="serif"
+        android:maxLines="2"
+        android:layout_height="wrap_content"
+
+        tools:ignore="UnusedAttribute"  />
+    <TextView
+        android:id="@+id/tvAboutCompany1"
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:textSize="20sp"
+        android:layout_below="@id/tvJobLocation2"
+        android:layout_gravity="left"
+        android:textFontWeight="200"
+        android:fontFamily="serif"
+        android:layout_height="wrap_content"
+        android:text="About Company : "
+        tools:ignore="UnusedAttribute"  />
+    <TextView
+        android:id="@+id/tvAboutCompany2"
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_below="@id/tvJobLocation2"
+        android:layout_toEndOf="@id/tvAboutCompany1"
+        android:layout_toRightOf="@id/tvAboutCompany1"
+        android:textFontWeight="200"
+        android:fontFamily="serif"
+        android:maxLines="4"
+        android:layout_height="wrap_content"
+
+        tools:ignore="UnusedAttribute"  />
+
+    <TextView
+        android:id="@+id/tvSalary1"
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:textSize="20sp"
+        android:layout_below="@id/tvAboutCompany2"
+        android:layout_gravity="left"
+        android:textFontWeight="200"
+        android:fontFamily="serif"
+        android:layout_height="wrap_content"
+        android:text="Salary : "
+        tools:ignore="UnusedAttribute"  />
+    <TextView
+        android:id="@+id/tvSalary2"
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_below="@id/tvAboutCompany2"
+        android:layout_toEndOf="@id/tvSalary1"
+        android:layout_toRightOf="@id/tvSalary1"
+        android:textFontWeight="200"
+        android:fontFamily="serif"
+        android:maxLines="2"
+        android:layout_height="wrap_content"
+
+        tools:ignore="UnusedAttribute"  />
+    <TextView
+        android:id="@+id/tvcriteria"
+        android:layout_width="wrap_content"
+        android:textColor="@color/logo"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:textFontWeight="200"
+        android:fontFamily="serif"
+        android:layout_below="@id/tvSalary2"
+        android:layout_height="wrap_content"
+        android:text="Criteria"
+        tools:ignore="UnusedAttribute"  />
+
+    <TextView
+        android:id="@+id/tvBranch1"
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:textSize="20sp"
+        android:layout_below="@id/tvcriteria"
+        android:layout_gravity="left"
+        android:textFontWeight="200"
+        android:fontFamily="serif"
+        android:layout_height="wrap_content"
+        android:text="Branch Required : "
+        tools:ignore="UnusedAttribute"  />
+    <TextView
+        android:id="@+id/tvBranch2"
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_below="@id/tvcriteria"
+        android:layout_toEndOf="@id/tvBranch1"
+        android:layout_toRightOf="@id/tvBranch1"
+        android:textFontWeight="200"
+        android:fontFamily="serif"
+        android:maxLines="2"
+        android:layout_height="wrap_content"
+
+        tools:ignore="UnusedAttribute"  />
+
+    <TextView
+        android:id="@+id/tvSSC1"
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:textSize="20sp"
+        android:layout_below="@id/tvBranch2"
+        android:layout_gravity="left"
+        android:textFontWeight="200"
+        android:fontFamily="serif"
+        android:layout_height="wrap_content"
+        android:text="SSC % : "
+        tools:ignore="UnusedAttribute"  />
+    <TextView
+        android:id="@+id/tvSSC2"
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_below="@id/tvBranch2"
+        android:layout_toEndOf="@id/tvSSC1"
+        android:layout_toRightOf="@id/tvSSC1"
+        android:textFontWeight="200"
+        android:fontFamily="serif"
+        android:maxLines="1"
+        android:layout_height="wrap_content"
+
+        tools:ignore="UnusedAttribute"  />
+
+    <TextView
+        android:id="@+id/tvHSC1"
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:textSize="20sp"
+        android:layout_below="@id/tvSSC2"
+        android:layout_gravity="left"
+        android:textFontWeight="200"
+        android:fontFamily="serif"
+        android:layout_height="wrap_content"
+        android:text="HSC/Diploma % : "
+        tools:ignore="UnusedAttribute"  />
+    <TextView
+        android:id="@+id/tvHSC2"
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_below="@id/tvSSC2"
+        android:layout_toEndOf="@id/tvHSC1"
+        android:layout_toRightOf="@id/tvHSC1"
+        android:textFontWeight="200"
+        android:fontFamily="serif"
+        android:maxLines="1"
+        android:layout_height="wrap_content"
+
+        tools:ignore="UnusedAttribute"  />
+
+    <TextView
+        android:id="@+id/tvBEcgpi1"
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:textSize="20sp"
+        android:layout_below="@id/tvHSC2"
+        android:layout_gravity="left"
+        android:textFontWeight="200"
+        android:fontFamily="serif"
+        android:layout_height="wrap_content"
+        android:text="B.E. Cgpi : "
+        tools:ignore="UnusedAttribute"  />
+    <TextView
+        android:id="@+id/tvBEcgpi2"
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_below="@id/tvHSC2"
+        android:layout_toEndOf="@id/tvBEcgpi1"
+        android:layout_toRightOf="@id/tvBEcgpi1"
+        android:textFontWeight="200"
+        android:fontFamily="serif"
+        android:maxLines="2"
+        android:layout_height="wrap_content"
+        tools:ignore="UnusedAttribute"  />
+
+    <TextView
+        android:id="@+id/tvNoofkt1"
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:textSize="20sp"
+        android:layout_below="@id/tvBEcgpi2"
+        android:layout_gravity="left"
+        android:textFontWeight="200"
+        android:fontFamily="serif"
+        android:layout_height="wrap_content"
+        android:text="No. of KT's Allowed : "
+        tools:ignore="UnusedAttribute"  />
+    <TextView
+        android:id="@+id/tvNoofkt2"
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_below="@id/tvBEcgpi2"
+        android:layout_toEndOf="@id/tvNoofkt1"
+        android:layout_toRightOf="@id/tvNoofkt1"
+        android:textFontWeight="200"
+        android:fontFamily="serif"
+        android:layout_marginBottom="30dp"
+        android:maxLines="2"
+        android:layout_height="wrap_content"
+        tools:ignore="UnusedAttribute"  />
+
+    <TextView
+        android:id="@+id/tvLink1"
+        android:layout_width="wrap_content"
+        android:textColor="@color/logo"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:textFontWeight="200"
+        android:fontFamily="serif"
+        android:layout_below="@id/tvNoofkt1"
+        android:layout_height="wrap_content"
+        android:text="Registeration Link"
+        tools:ignore="UnusedAttribute"  />
+    <TextView
+        android:id="@+id/tvLink2"
+        android:layout_width="wrap_content"
+        android:textColor="@color/logo"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:textFontWeight="200"
+        android:fontFamily="serif"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@id/tvLink1"
+        android:layout_height="wrap_content"
+
+        tools:ignore="UnusedAttribute"  />
+    <TextView
+        android:id="@+id/tvTotal1"
+        android:layout_width="wrap_content"
+        android:textColor="@color/logo"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:textFontWeight="200"
+        android:fontFamily="serif"
+        android:layout_below="@id/tvLink2"
+        android:layout_height="wrap_content"
+        android:text="Total Students"
+        tools:ignore="UnusedAttribute"  />
+    <TextView
+        android:id="@+id/tvTotal2"
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:textFontWeight="200"
+        android:fontFamily="serif"
+        android:layout_below="@id/tvTotal1"
+        android:layout_height="wrap_content"
+        tools:ignore="UnusedAttribute"  />
+
+    <TextView
+        android:id="@+id/tvEligible1"
+        android:layout_width="wrap_content"
+        android:textColor="@color/logo"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:textFontWeight="200"
+        android:fontFamily="serif"
+        android:layout_below="@id/tvTotal2"
+        android:layout_height="wrap_content"
+        android:text="Eligible Students"
+        tools:ignore="UnusedAttribute"  />
+    <TextView
+        android:id="@+id/tvEligible2"
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:textFontWeight="200"
+        android:fontFamily="serif"
+        android:layout_below="@id/tvEligible1"
+        android:layout_height="wrap_content"
+        tools:ignore="UnusedAttribute"  />
+
+
+
+
+</RelativeLayout>
+
+</ScrollView>

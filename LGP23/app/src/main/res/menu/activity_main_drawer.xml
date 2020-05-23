@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/list"
+            android:icon="@drawable/list"
+            android:title="Company List" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/refresh"
+            android:title="Update Profile" />
+        <item
+            android:id="@+id/notify"
+            android:icon="@drawable/notification"
+            android:title="View Notifications" />
+        <item
+            android:id="@+id/resume"
+            android:icon="@drawable/resume"
+            android:title="Generate Resume" />
+
+        <item
+            android:id="@+id/view"
+            android:icon="@drawable/viewprofile"
+            android:title="View Profile" />
+
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/legacy"
+                android:icon="@drawable/document"
+                android:title="Legacy" />
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/aboutus"
+                android:title="About LetsGetPlaced" />
+            <item
+                android:id="@+id/help"
+                android:icon="@drawable/help"
+                android:title="Help" />
+
+
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:verticalScrollbarPosition="defaultPosition"
+    android:layout_height="match_parent"
+    tools:context=".Event">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        android:focusable="false"
+        android:focusableInTouchMode="true">
+        <TextView
+            android:id="@+id/tvCompanyDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="95dp"
+            android:text="Company Details"
+            android:textColor="@color/DarkCyan"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/etCompanyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Company Name"
+            android:layout_below="@+id/tvCompanyDetails"
+            android:inputType="textCapWords" />
+        <EditText
+            android:id="@+id/etJobDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Job Description"
+            android:layout_below="@+id/etCompanyName"
+            android:inputType="textCapWords" />
+        <EditText
+            android:id="@+id/etJobLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Location"
+            android:layout_below="@+id/etJobDescription"
+            android:inputType="textCapWords" />
+        <EditText
+            android:id="@+id/etAboutCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="About Company"
+            android:layout_below="@+id/etJobLocation"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/etSalary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Salary"
+            android:layout_below="@+id/etAboutCompany"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Drive Date(dd/mm/yyyy)"
+            android:layout_below="@+id/etSalary"
+            android:inputType="text" />
+
+
+        <TextView
+            android:id="@+id/tvCriteria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="95dp"
+            android:layout_centerHorizontal="true"
+            android:text="Criteria"
+            android:textStyle="bold"
+            android:layout_below="@+id/etDate"
+            android:textColor="@color/DarkCyan"
+            android:textSize="30dp" />
+        <EditText
+            android:id="@+id/etBranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCriteria"
+            android:ems="10"
+            android:hint="Branch"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etSSC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etBranch"
+            android:ems="10"
+            android:hint="SSC %"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etHSC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etSSC"
+            android:ems="10"
+            android:hint="HSC/Diploma %"
+            android:inputType="numberDecimal" />
+
+
+        <EditText
+            android:id="@+id/etBECgpi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etHSC"
+            android:ems="10"
+            android:hint="BE CGPI"
+            android:inputType="numberDecimal" />
+        <EditText
+            android:id="@+id/etKT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etBECgpi"
+            android:ems="10"
+            android:hint="Live KT's allowed"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etLink"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/etKT"
+            android:ems="10"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+
+            android:layout_toRightOf="@id/ibtnLink"
+            android:hint="Copy Resigteration link"
+            android:inputType="text" />
+
+        <ImageButton
+            android:id="@+id/ibtnLink"
+            android:layout_width="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="50dp"
+            app:srcCompat="@mipmap/gmailicon1"
+            android:layout_below="@+id/etKT"
+            android:layout_gravity=""
+            />
+
+
+
+
+        <Button
+            android:id="@+id/btnAddCompany"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/etLink"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="55dp"
+            android:background="@drawable/roundedbutton"
+            android:backgroundTint="@color/DarkCyan"
+            android:paddingLeft="80dp"
+            android:paddingRight="80dp"
+            android:layout_centerHorizontal="true"
+            android:text="Add Company"
+            android:textColor="#ffff"
+            android:textSize="20sp" />
+
+
+
+    </RelativeLayout>
+</ScrollView>
